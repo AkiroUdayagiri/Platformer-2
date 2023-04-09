@@ -18,15 +18,28 @@ from level_maker import LevelMaker
 def main(window):
     block_size = 96
 
-    level1 = LevelMaker(1, "background.png", "block.png",[
+    level1 = LevelMaker(1, "background1.png", "Terrain.png",[
         Block(0, HEIGHT - block_size * 2, block_size),
+        Block(0, HEIGHT - block_size * 3, block_size),
+        Block(0, HEIGHT - block_size * 4, block_size),
+        Block(0, HEIGHT - block_size * 5, block_size),
+        Block(0, HEIGHT - block_size * 6, block_size),
+        Block(0, HEIGHT - block_size * 7, block_size),
+        Block(0, HEIGHT - block_size * 8, block_size),
+
+        Block(1150, HEIGHT - block_size * 2, block_size),
+        Block(1150, HEIGHT - block_size * 3, block_size),
+        Block(1150, HEIGHT - block_size * 4, block_size),
+        Block(1150, HEIGHT - block_size * 5, block_size),
+        Block(1150, HEIGHT - block_size * 7, block_size),
+        Block(1150, HEIGHT - block_size * 8, block_size),
+
         Block(block_size * 3, HEIGHT - block_size * 3, block_size),
-        Block(block_size * 4, HEIGHT - block_size * 4, block_size),
-        Block(block_size * 5, HEIGHT - block_size * 5, block_size),
-        Block(block_size * 6, HEIGHT - block_size * 6, block_size),
+        Block(block_size * 6, HEIGHT - block_size * 4, block_size),
+        Block(block_size * 9, HEIGHT - block_size * 5, block_size),
+        Block(block_size * 7, HEIGHT - block_size * 6, block_size),
     ], [
-        Fire(100, HEIGHT - block_size - 64, 16, 32,),
-        Fire(200, HEIGHT - block_size - 64, 16, 32,),
+
     ])
 
     level1.create_level()

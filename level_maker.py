@@ -17,7 +17,7 @@ class LevelMaker:
 
     def create_level(self):
         floor = [Block(i * self.block_size, HEIGHT - self.block_size, self.block_size)
-                 for i in range(-WIDTH // self.block_size, (WIDTH * 2) // self.block_size)]
+                 for i in range(0, WIDTH // self.block_size)]
         self.objects = floor + self.blocks + self.fire
         print(self.objects)
 
