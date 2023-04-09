@@ -29,6 +29,8 @@ def main(window):
         Fire(200, HEIGHT - block_size - 64, 16, 32,),
     ])
 
+    level1.create_level()
+
 
     clock = pygame.time.Clock()
 
